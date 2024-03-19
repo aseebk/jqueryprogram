@@ -9,16 +9,20 @@
 
     <script>
 $(document).ready(function(){
-    $("button").click(function(){
-        $("#container").css("background-color","green");
+    $('#para').click(function() {
+        $('.button').show();
+    });
+
+    $('.button').click(function() {
+        $('#container').css('background-color', 'green');
     });
 });
     </script>
 </head>
 <body>
    <div id="container" style="height: 300px; width: 300px; background-color: antiquewhite;">
-          <p class="green">Click the Button then the Color were Change</p>
+       <p id="para"> Click Me</p> <br>
+        <button class="button">Click Me</button>
    </div>
-   <button>Click Me</button>
 </body>
 </html>
