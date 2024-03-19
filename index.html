@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Program</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#container").css("background-color","green");
+    });
+});
+    </script>
+</head>
+<body>
+   <div id="container" style="height: 300px; width: 300px; background-color: antiquewhite;">
+          <p class="green">Click the Button then the Color were Change</p>
+   </div>
+   <button>Click Me</button>
+</body>
+</html>

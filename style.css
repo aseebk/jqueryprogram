@@ -1,0 +1,16 @@
+p{
+    margin-top: 2rem;
+    font-size: 39px;
+}
+button{
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: azure;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(64, 78, 73);
+}
+.green{
+    color: green;
+}
