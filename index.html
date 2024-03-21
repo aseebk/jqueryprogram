@@ -8,21 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
     <script>
-$(document).ready(function(){
-    $('#para').click(function() {
-        $('.button').show();
-    });
+   $(document).ready(function(){
+            let button = $("<button></button>").text("Click me");
+            $(button).appendTo("#container");
+             
+        $("button").click(function(){
+            $("div").css({"background-color": "green"});
 
-    $('.button').click(function() {
-        $('#container').css('background-color', 'green');
-    });
-});
+        })
+            })
     </script>
 </head>
 <body>
-   <div id="container" style="height: 300px; width: 300px; background-color: antiquewhite;">
-       <p id="para"> Click Me</p> <br>
-        <button class="button">Click Me</button>
-   </div>
+    <div id="container"></div>
 </body>
 </html>
